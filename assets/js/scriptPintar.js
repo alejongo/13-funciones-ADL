@@ -14,6 +14,7 @@
 
 const changeBackground = (id, color) => {
     const ele = document.getElementById(id)
+
     ele.addEventListener('click', () => {
         ele.style.backgroundColor = color
     })
