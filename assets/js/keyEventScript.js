@@ -1,6 +1,8 @@
 
 
-let color = ''
+const colorRosa = '#f472b6'
+const colorNaranja = '#fb923c'
+const colorCeleste = '#22d3ee'
 
 const colorize = () => {
     const key = document.getElementById('key')
@@ -12,27 +14,25 @@ const colorize = () => {
         newDiv.setAttribute('class', 'w-[200px] h-[200px] outline outline-gray-900 rounded-lg')
 
         if (e.key === 'a') {
-            color = '#f472b6'
-            key.style.backgroundColor = color
+            //color = '#f472b6'
+            key.style.backgroundColor = colorRosa
             // console.log(color)
         } else if (e.key === 's') {
-            color = '#fb923c'
-            key.style.backgroundColor = color
+            key.style.backgroundColor = colorNaranja
             // console.log(color)
         } else if (e.key === 'd') {
-            color = '#22d3ee'
-            key.style.backgroundColor = color
+            key.style.backgroundColor = colorCeleste
             // console.log(color)
         } else if (e.key === 'q') {
-            color = '#818cf8'
+            const color = '#818cf8'
             main_container.appendChild(newDiv)
             newDiv.style.backgroundColor = color
         } else if (e.key === 'w') {
-            color = '#d1d5db'
+            const color = '#d1d5db'
             main_container.appendChild(newDiv)
             newDiv.style.backgroundColor = color
         } else if (e.key === 'e') {
-            color = '#a16207'
+            const color = '#a16207'
             main_container.appendChild(newDiv)
             newDiv.style.backgroundColor = color
         }
